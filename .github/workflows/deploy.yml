@@ -4,12 +4,20 @@ on:
   push:
     branches: [ main ]
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true # Ensure credentials are persisted
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -30,3 +38,5 @@ jobs:
         with:
           folder: dist
           branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }} # Explicitly use the GitHub token
+          clean: true # Automatically remove deleted files from the deploy branch
