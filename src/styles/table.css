@@ -1,0 +1,136 @@
+/* Custom table styles */
+.anime-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #333;
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+}
+
+.anime-table th {
+  background: linear-gradient(90deg, 
+    rgba(0, 242, 255, 0.3), 
+    rgba(183, 0, 255, 0.3), 
+    rgba(255, 0, 230, 0.3));
+  color: white;
+  font-weight: bold;
+  padding: 12px 15px;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+.anime-table th:hover {
+  background: rgba(50, 50, 50, 0.7);
+}
+
+.anime-table td {
+  padding: 10px 15px;
+  border: 1px solid #444;
+}
+
+.anime-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.anime-table tr:nth-child(odd) {
+  background-color: #222;
+}
+
+.anime-table tr:hover {
+  background-color: #333;
+}
+
+/* Neon colors for text */
+.neon-blue {
+  color: #00f2ff;
+  text-shadow: 0 0 5px rgba(0, 242, 255, 0.5);
+  font-weight: bold;
+}
+
+.neon-orange {
+  color: #ff7300;
+  text-shadow: 0 0 5px rgba(255, 115, 0, 0.5);
+  font-weight: bold;
+}
+
+.neon-purple {
+  color: #b700ff;
+  text-shadow: 0 0 5px rgba(183, 0, 255, 0.5);
+  font-weight: bold;
+}
+
+.neon-pink {
+  color: #ff00e6;
+  text-shadow: 0 0 5px rgba(255, 0, 230, 0.5);
+  font-weight: bold;
+}
+
+.neon-green {
+  color: #39ff14;
+  text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);
+  font-weight: bold;
+}
+
+/* Status background styles */
+.status-complete {
+  background-color: rgba(0, 242, 255, 0.2);
+}
+
+.status-uptodate {
+  background-color: rgba(57, 255, 20, 0.2);
+}
+
+.status-dropped {
+  background-color: rgba(255, 115, 0, 0.2);
+}
+
+.status-inqueue {
+  background-color: rgba(183, 0, 255, 0.2);
+}
+
+.status-missing {
+  background-color: rgba(255, 0, 230, 0.2);
+}
+
+/* Streamer background styles */
+.streamer-netflix {
+  background-color: rgba(0, 242, 255, 0.2);
+}
+
+.streamer-crunchyroll {
+  background-color: rgba(255, 115, 0, 0.2);
+}
+
+.streamer-prime {
+  background-color: rgba(183, 0, 255, 0.2);
+}
+
+.streamer-hidive {
+  background-color: rgba(255, 0, 230, 0.2);
+}
+
+/* Title styling */
+.title-container {
+  margin-bottom: 2.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.anime-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00f2ff, #b700ff, #ff00e6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+  margin-bottom: 1rem;
+}
+
+.title-underline {
+  height: 3px;
+  width: 100px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #00f2ff, #b700ff, #ff00e6);
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(255, 0, 230, 0.3);
+}
